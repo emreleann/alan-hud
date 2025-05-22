@@ -139,7 +139,7 @@ Citizen.CreateThread(function()
     while true do
         local time = 1000
         if inVehicle then 
-            time = 50
+            time = 200
             SendNUIMessage({
                 type = "CusalsetSpeedo",
                 speed = math.floor(prevSpeed * 3.6)
@@ -605,7 +605,7 @@ Citizen.CreateThread(function()
         local time = 1000
         if isLoggedIn then
             if inVehicle then
-                time = 1
+                time = 200
                 engineRunning = GetIsVehicleEngineRunning(vehicle)
                 prevSpeed = curSpeed
                 curSpeed =  GetEntitySpeed(vehicle)
